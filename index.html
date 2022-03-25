@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation_Bar_Practice</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        div.header{
+            height: 50px;
+            width: 100%;
+            background-color: lightgreen;
+            display: inline-block;
+            
+        }
+        div.logo{
+            display: inline-block;
+            float: left;
+            line-height: 50px;
+            font-size: 30px;
+            color: rgb(128, 5, 5);
+            font-weight: bolder;
+
+        }
+        ul li{
+            display: inline-block;
+            float: left;
+            margin-left: 40px;
+            color: brown;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 25px;
+        }
+        div.search{
+            display: inline;
+            margin-left: 170px;
+        }
+        input.search{
+            border: none;
+            box-shadow: 3px 3px 0px 0px brown;
+            width: 180px;
+            height: 23px;
+            border-radius: 5px;
+        }
+        div.login{
+            display:inline-block;
+            float: right;
+            margin-right: 15px;
+            
+        }
+        button.signin{
+            background-color: rgb(33, 9, 248);
+            width: 60px;
+            height: 25px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 0px 0px #000;
+            color: bisque;
+        }
+        button.signup{
+            background-color: rgb(6, 189, 36);
+            width: 60px;
+            height: 25px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 0px 0px #000;
+            color: bisque;
+        }
+        
+    </style>
+        <div class="header">
+                <div class="logo">
+                    My Logo
+                </div>
+                    <ul class="list">
+                        <li>Portfolio</li>
+                        <li>Education</li>
+                        <li>Skill</li>
+                        <li>Contact</li>
+                        <li>Languages</li>
+                        <li>Experience</li>
+                    </ul>
+                <div class="search">
+                    <input class="search" type="Search" name="search" placeholder="Search About Asadullah">
+                </div>
+                <div class="login">
+                    <button class="signin">Sign In</button>
+                    <button class="signup">Sign Up</button>
+                </div>
+        </div>
+                    
+
+
+
+</body>
+</html>
