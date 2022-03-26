@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation_Bar_Practice</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <style>
         body{
+            
             margin: 0px;
             margin-left: 10px;
             margin-right: 10px;
         }
-        div.header{
+        header.header{
             height: 50px;
             width: 100%;
+            padding-top: 0px;
+            margin-top: 0px;
             background-color: lightgreen;
             display: inline-block;
-            
+            position: fixed;
         }
         div.logo{
             display: inline-block;
@@ -73,19 +77,114 @@
             box-shadow: 2px 2px 0px 0px #000;
             color: bisque;
         }
-        
+        div.data{
+            display: inline-block;
+            background: rgb(24, 24, 240);
+            width: 100%;
+            margin-top: 30px;
+            border: none;
+            border-radius: 20px;
+            padding-top: 30px;
+        }
+        img.img{
+            height: 130px;
+            width: 130px;
+            float: right;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        div.name{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: inline-block;
+            font-weight: bolder;
+            font-size: xx-large;
+            height: 50px;
+            
+        }
+        div#name{
+            margin-left: 40px;
+            margin-top: 10px;
+            color: lightgoldenrodyellow;
+            
+        }
+        #contact{
+            font-weight: lighter;
+            color: rgb(128, 193, 250);
+        }
+        table.profile{
+            margin-left: 375px;
+        }
+        th.profile{
+            color: lightsteelblue;
+            height: 50px;
+            width: 300px;
+            font-weight: bold;
+        }
+        td.profile{
+            color: yellow;
+            height: 50px;
+            width: 300px;
+            font-weight: 150;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(182, 102, 11);
+            
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: green;
+        }
+        h1.education{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: inline-block;
+            font-weight: bolder;
+            font-size: xx-large;
+            height: 50px;
+            margin-left: 40px;
+            margin-top: 10px;
+            color: lightgoldenrodyellow;
+        }
+        table#profile{
+            margin-left: 625px;
+        }
+        h1.skill{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: inline-block;
+            font-weight: bolder;
+            font-size: xx-large;
+            height: 50px;
+            margin-left: 40px;
+            margin-top: 10px;
+            color: lightgoldenrodyellow;
+        }
+        div.contactus{
+            display: inline-block;
+            background-color: transparent;
+            margin-left: 480px;
+            background-color: aliceblue;
+        }
+        img.con{
+            width: 40px;
+            height: 40px;
+            margin-left: 30px;
+        }
+
     </style>
-        <div class="header">
+     <header class="header">
                 <div class="logo">
                     My Logo
                 </div>
                     <ul class="list">
-                        <li>Portfolio</li>
-                        <li>Education</li>
-                        <li>Skill</li>
-                        <li>Contact</li>
-                        <li>Languages</li>
-                        <li>Experience</li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#language">Language</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#con">Contact Us</a></li>
                     </ul>
                 <div class="search">
                     <input class="search" type="Search" name="search" placeholder="Search About Asadullah">
@@ -94,10 +193,129 @@
                     <button class="signin">Sign In</button>
                     <button class="signup">Sign Up</button>
                 </div>
+        </header>
+        <p id="portfolio" ></p>
+        <div class="data" >
+            <img class="img" src="https://pbs.twimg.com/profile_images/1485978384001810436/3WMqZe0U_400x400.jpg" alt="Asadullah Image">
+            <div id="name">
+            <div class="name">ASADULLAH</div> <br>
+            <span class="so">S/O</span> <br>
+            <div class="name">KHALILIURAHMAN</div> <br>
+            <span id="contact"> mr.asadullah19@gmail.com</span> <br>
+            <span id="contact"> +923126963019</span>
+            </div> 
+            <table class="profile">
+                <tr>
+                    <th class="profile">D.O.B (Date Of Birth)</th>
+                    <td class="profile">15 Oct 2000</td>
+                </tr>
+                <tr>
+                    <th class="profile">Domisile</th>
+                    <td class="profile">OKARA</td>
+                </tr>
+                <tr>
+                    <th class="profile">Place of Living</th>
+                    <td class="profile">Saddar, Karachi</td>
+                </tr>
+                <tr>
+                    <th class="profile">Marital Status</th>
+                    <td class="profile">Single</td>
+                </tr>
+                <tr>
+                    <th class="profile">Gmail</th>
+                    <td class="profile"><a href="mailto:mr.asadullah19@gmail.com"> mr.asadullahrajpoot19@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <th class="profile">Contact #</th>
+                    <td class="profile"><a href="messageto:+923126963019">+923126963019</a></td>
+                </tr>
+            </table>
+        </div>  
+        <p id="education"></p>
+        <div class="data">
+            <h1 class="education">
+                Education
+            </h1>
+            <table class="profile">
+                <tr>
+                    <th class="profile">Primary</th>
+                    <td class="profile">Gillani School System Okara</td>
+                    
+                </tr>
+                <tr>
+                    <th class="profile">Matric</th>
+                    <td class="profile">Govt M.C Model High School Okara</td>
+                    <td style="color: antiquewhite;">2017</td>
+                </tr>
+                <tr>
+                    <th class="profile">Intermediate</th>
+                    <td class="profile">PNPI Karachi</td>
+                    <td style="color: antiquewhite;">2021</td>
+                </tr>
+            </table>
+        </div> 
+        <p id="skill"></p>
+        <div class="data" >
+                <h1 class="skill">
+                    Skills
+                </h1>
+                <table id="profile">
+                    <tr>
+                        <td class="profile">Microsoft Office</td>
+                    </tr>
+                    <tr>
+                        <td class="profile">Chess Player</td>
+                    </tr>
+                    <tr>
+                        <td class="profile">VS Code</td>
+                    </tr>
+                </table>
         </div>
+        <p id="language"></p>
+        <div class="data" >
+                <h1 class="skill">
+                    Languages
+                </h1>
+                <table id="profile">
+                    <tr>
+                        <td class="profile">English</td>
+                    </tr>
+                    <tr>
+                        <td class="profile">Urdu</td>
+                    </tr>
+                    <tr>
+                        <td class="profile">Punjabi</td>
+                    </tr>
+
+                </table>
+       </div>
+       <p id="experience"></p>
+       <div class="data" >
+                <h1 class="skill">
+                    Experience
+                </h1>
+                <p style="padding-left: 50px; color: lightcoral;">
+                   <b> Having No Experience yet, Fresh Candidate. </b>
+                </p>                
+       </div>
+       <div class="data" id="con">
+            <h1 class="skill">
+                Contact Us
+            </h1> <br>
+            <div class="contactus" >
+                <a href="https://github.com/asadullah696" target="blank"><img class="con" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github"></a>
+                <a href="https://www.facebook.com/asadullahrajpootofficial/?ref=page_internal" target="blank"><img class="con" src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="Facebook"></a>                
+                <a href="mailto:mr.asadullahrajpoot19@gmail.com" target="blank"><img class="con" src="https://image.similarpng.com/very-thumbnail/2020/12/Most-popular-icon-Gmail-premium-vector-PNG.png" alt="Gmail"></a>
+                <a href="https://instagram.com/asadullahrajpootofficial" target="blank"><img class="con" src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Instagram-512.png" alt="instagram"></a>
+                <a href="https://twitter.com/asadullah696" target="blank"><img class="con" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="Twitter"></a>
+
+            </div>
+       </div>
+
+   </div>
                     
 
-
+ 
 
 </body>
 </html>
